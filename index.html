@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mateando</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <button class="btn" onclick="juegoMatienso()">Descubri tu Mate</button>
+    </div>
+  </div>
+
+  <div class="container-prompt">
+    <div id="customPrompt" class="custom-prompt" style="display: none;">
+      <h3 class="title">Ingresa el nombre del mate que usas?</h3>
+      <input class="input" type="text" id="mateInput" />
+      <button class="btn-two" onclick="verificarMate()">Aceptar</button>
+    </div>
+  </div>
+
+  <div class="message" id="messageContainer" style="display: none;"></div>
+
+
+  <footer>
+    <div class="container-footer">
+      <h3>Hecho con ❤️ en San Vicente</h3>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
