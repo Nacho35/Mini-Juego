@@ -40,6 +40,7 @@ body {
   touch-action: manipulation;
   color: white;
   margin-top: 10px;
+  font-weight: 600;
 }
 
 .btn:after {
@@ -75,10 +76,10 @@ body {
 .custom-prompt {
   background-color: #333;
   padding: 1.5rem;
-  border-radius: 10px;
   width: fit-content;
   margin: auto;
   margin-top: 10px;
+  text-align: center;
 
   @media (min-width: 375px) {
     padding-left: 10px;
@@ -90,26 +91,28 @@ body {
   color: white;
   text-transform: uppercase;
   font-size: 16px;
+  line-height: 1.5rem;
+  text-align: center;
 }
 
 .input {
-  padding: 8px;
-  border-radius: 10px;
+  padding: 10px;
   border: none;
 }
 
 .message {
   background-color: #333;
   color: white;
-  font-size: larger;
+  font-weight: 500;
   margin: auto;
   margin-top: 15px;
   width: 80%;
   padding: 1rem;
-  border-radius: 10px;
-  line-height: 2rem;
+  line-height: 1.5rem;
   text-align: center;
   text-transform: uppercase;
+  z-index: 1;
+  position: relative;
 
   @media (min-width: 1024px) {
     width: 40%;
@@ -163,6 +166,10 @@ body {
   touch-action: manipulation;
   margin-left: 10px;
   width: 40%;
+
+  @media (max-width: 360px) {
+    margin-top: 1rem;
+  }
 }
 
 .container-footer {
@@ -173,4 +180,5 @@ body {
   padding: 5px;
   color: white;
   text-align: center;
+  z-index: 0;
 }
